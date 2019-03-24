@@ -1,0 +1,26 @@
+.view-service-container{
+  height: 100%;
+}
+
+
+.status{
+    text-align: center;
+}
+
+.textarea{
+  height: 40%;
+}
+
+.delete-button{
+  position: absolute;
+  right: 1;
+  bottom: 0;
+  margin: 0px 5% 5% 0;
+}
+
+.edit-button{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0px 5% 5% 0;
+}

@@ -1,0 +1,47 @@
+<div class="view-service-container">
+  <form class="form-row">
+
+    <div class="col-12 form-group">
+      <label for="name">Nome:</label>
+      <h5>Teste Nome</h5>
+    </div>
+
+    <div class="col-12 form-group">
+      <label for="client">Cliente:</label>
+      <h5>Teste Cliente</h5>
+    </div>
+
+    <div class="col-12 form-group">
+      <label for="inputState">Status:</label>
+      <select id="inputState" class="form-control" name="status" [(ngModel)]="status">
+        <option selected>Esperando</option>
+        <option>Em Andamento</option>
+        <option>Pausado</option>
+        <option>Parado</option>
+        <option>Cançelado</option>
+        <option>Aguardando Pagamento</option>
+      </select>
+    </div>
+
+    <div class="col-12 form-group textarea">
+      <label for="description">Descrição:</label>
+      <p> Teste Descrição
+      </p>
+    </div>
+
+    <div class="col-6 form-group ">
+      <label for="price">Preço:</label>
+      <h5>899,00</h5>
+    </div>
+
+    <div class="col-6 form-group">
+      <label for="term">Prazo:</label>
+      <h5>22/09/2019</h5>
+    </div>
+
+  </form>
+
+  <button type="button" name="delteButton" class="delete-button">Deletar</button>
+  <button type="button" name="editButton" class="edit-button">Atualizar</button>
+
+</div>
