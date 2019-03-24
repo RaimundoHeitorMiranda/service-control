@@ -6,15 +6,24 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 
+// chartjs module
+import { ChartsModule } from 'ng2-charts';
+import { NewServiceComponent } from './new-service/new-service.component';
+import { ViewServiceComponent } from './view-service/view-service.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    NewServiceComponent,
+    ViewServiceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

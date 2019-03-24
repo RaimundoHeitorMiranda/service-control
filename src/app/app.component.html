@@ -1,3 +1,26 @@
-<!-- <router-outlet></router-outlet> -->
 <!-- <app-login></app-login> -->
-<app-home></app-home>
+<div class="app-container">
+
+  <div class="app-header">
+    <i class="material-icons app-header-ico" (click)="asideShow = !asideShow">
+      menu
+    </i>
+    <h1 class="app-header-name" [routerLink]="['/']">Service Control</h1>
+  </div>
+
+  <aside *ngIf="asideShow" class="app-aside">
+    <ul class="list-group list-group-flush" (click)="asideShow = !asideShow">
+      <li class="list-group-item desabled" [routerLink]="['/newService']" >Novo Serviço</li>
+      <li class="list-group-item desabled">Serviços</li>
+      <li class="list-group-item desabled">Financeiro</li>
+      <li class="list-group-item desabled">Histórico</li>
+      <li class="list-group-item desabled">Usuários</li>
+    </ul>
+  </aside>
+
+
+  <div class="app-body">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

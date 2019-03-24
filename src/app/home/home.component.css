@@ -1,0 +1,27 @@
+.home-container{
+  height: 100%;
+  text-align: center;
+}
+
+.graphs{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.graphs-services{
+  flex: 1;
+  width: 50%;
+  height: 100%;
+}
+
+.graphs-finacial{
+  flex: 1;
+  width: 50%;
+  height: 100%;
+}
+
+canvas{
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -1,0 +1,81 @@
+<div class="home-container">
+
+  <div class="graphs">
+
+    <div class="graphs-services">
+      <h6>Services</h6>
+      <canvas baseChart
+        [data]="pieServicesChartData"
+        [labels]="pieServicesChartLabels"
+        [chartType]="pieChartType"
+        [legend]="pieChartLegend">
+      </canvas>
+    </div>
+
+    <div class="graphs-finacial">
+      <h6>Financial</h6>
+      <canvas baseChart
+        [data]="pieFinancialChartData"
+        [labels]="pieFinancialChartLabels"
+        [chartType]="pieChartType"
+        [legend]="pieChartLegend">
+      </canvas>
+    </div>
+
+  </div>
+
+  <!-- Divider between graphs and services list -->
+  <hr>
+
+  <div class="services">
+    <h5>Services List</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Cliente</th>
+          <th scope="col">Prazo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>25/05/2019</td>
+        </tr>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>25/05/2019</td>
+        </tr>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>25/05/2019</td>
+        </tr>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>25/05/2019</td>
+        </tr>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>25/05/2019</td>
+        </tr>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>25/05/2019</td>
+        </tr>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>25/05/2019</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
