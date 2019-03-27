@@ -16,6 +16,7 @@ import { ViewServiceComponent } from './view-service/view-service.component';
 // chartjs module
 import { ChartsModule } from 'ng2-charts';
 import { ListServiceComponent } from './list-service/list-service.component';
+import { FinancialComponent } from './financial/financial.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ListServiceComponent } from './list-service/list-service.component';
     HomeComponent,
     NewServiceComponent,
     ViewServiceComponent,
-    ListServiceComponent
+    ListServiceComponent,
+    FinancialComponent
   ],
   imports: [
     BrowserModule,

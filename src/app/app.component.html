@@ -10,11 +10,10 @@
 
   <aside *ngIf="asideShow" class="app-aside">
     <ul class="list-group list-group-flush" (click)="asideShow = !asideShow">
-      <li class="list-group-item desabled" [routerLink]="['/newService']" >Novo Serviço</li>
-      <li class="list-group-item desabled">Serviços</li>
-      <li class="list-group-item desabled">Financeiro</li>
-      <li class="list-group-item desabled">Histórico</li>
-      <li class="list-group-item desabled">Usuários</li>
+      <li class="list-group-item" [routerLink]="['/newService']" >Novo Serviço</li>
+      <li class="list-group-item" [routerLink]="['/listService']" >Serviços</li>
+      <li class="list-group-item" [routerLink]="['/financial']" >Financeiro</li>
+      <li class="list-group-item">Sair</li>
     </ul>
   </aside>
 

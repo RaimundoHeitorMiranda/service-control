@@ -1,0 +1,57 @@
+<div class="financial-container">
+
+  <div class="financial-header">
+
+    <div class="statistic">
+      <h5>Receita Estimada:300,00</h5>
+      <h5>Receita recebida:90,00</h5>
+      <h5>Receita à receber:90,00</h5>
+    </div>
+
+    <div class="graph">
+      <canvas baseChart
+        [data]="pieFinancialChartData"
+        [labels]="pieFinancialChartLabels"
+        [chartType]="pieChartType"
+        [legend]="pieChartLegend">
+      </canvas>
+    </div>
+
+  </div>
+
+  <div class="financial-list">
+    <h5> Service List</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Cliente</th>
+          <th scope="col">Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>200,00</td>
+        </tr>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>200,00</td>
+        </tr>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>200,00</td>
+        </tr>
+        <tr>
+          <td>Motor quantico</td>
+          <td>Antonio</td>
+          <td>200,00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
