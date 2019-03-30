@@ -1,0 +1,41 @@
+<div class="new-user-container">
+
+  <!-- Logo -->
+  <div class="new-user-logo">
+    <!-- alt="Logo brand for aplication/plataform" -->
+    <img src="https://t3.ftcdn.net/jpg/00/88/96/52/240_F_88965262_yfIiFoobzJS07c0VrHZGyj9bkyhT6qdv.jpg" alt="Logo marca da plataforma">
+  </div>
+
+  <div class="new-user-form">
+    <form class="form-row">
+
+      <div class="col-12 form-group">
+        <label for="name">Nome:</label>
+        <input [(ngModel)]="user.name" class="form-control" type="text" name="name">
+      </div>
+
+      <div class="col-12 form-group">
+        <label for="email">Email:</label>
+        <input [(ngModel)]="user.email" class="form-control" type="text" name="email">
+      </div>
+
+      <div class="col-12 form-group">
+        <label for="name">Senha:</label>
+        <input [(ngModel)]="user.password" class="form-control" type="password" name="password">
+      </div>
+
+      <div class="col-12 form-group">
+        <label for="name">Repita a Senha:</label>
+        <input [(ngModel)]="passwordConfirmation" class="form-control" type="password" name="password-reply">
+      </div>
+
+    </form>
+  </div>
+
+  <!-- Buttons Login -->
+  <div class="login-Buttons">
+    <button *ngIf="passwordVerification()" (click)="register()" class="form-control" type="button" name="button" >Registrar</button>
+    <p *ngIf="!passwordVerification()">Senha Não coincidem</p>
+  </div>
+
+</div>

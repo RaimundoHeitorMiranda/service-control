@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { CommonModule } from '@angular/common';
@@ -17,6 +18,11 @@ import { ViewServiceComponent } from './view-service/view-service.component';
 import { ChartsModule } from 'ng2-charts';
 import { ListServiceComponent } from './list-service/list-service.component';
 import { FinancialComponent } from './financial/financial.component';
+import { NewUserComponent } from './new-user/new-user.component';
+
+// Service
+import { NewUserService } from './new-user/new-user.service';
+
 
 
 @NgModule({
@@ -27,7 +33,8 @@ import { FinancialComponent } from './financial/financial.component';
     NewServiceComponent,
     ViewServiceComponent,
     ListServiceComponent,
-    FinancialComponent
+    FinancialComponent,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,
@@ -35,9 +42,12 @@ import { FinancialComponent } from './financial/financial.component';
     ChartsModule,
     BrowserAnimationsModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    NewUserService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

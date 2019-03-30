@@ -6,9 +6,11 @@ import { NewServiceComponent } from './new-service/new-service.component';
 import { ViewServiceComponent } from './view-service/view-service.component';
 import { ListServiceComponent } from './list-service/list-service.component';
 import { FinancialComponent } from './financial/financial.component';
+import { NewUserComponent } from './new-user/new-user.component';
 
 const routes: Routes = [
     { path:'login',component: LoginComponent},
+    { path:'newUser',component: NewUserComponent},
     { path:'',component: HomeComponent},
     { path:'newService',component: NewServiceComponent},
     { path:'viewService',component: ViewServiceComponent},
