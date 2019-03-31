@@ -3,32 +3,32 @@
 
     <div class="col-12 form-group">
       <label for="name">Nome:</label>
-      <input type="text" name="name" class="form-control">
+      <input [(ngModel)]="service.name" type="text" name="name" class="form-control">
     </div>
 
     <div class="col-12 form-group">
       <label for="client">Cliente:</label>
-      <input type="text" name="client" class="form-control">
+      <input [(ngModel)]="service.client" type="text" name="client" class="form-control">
     </div>
 
     <div class="col-12 form-group textarea">
       <label for="description">Descrição</label>
-      <textarea name="description" rows="8" cols="180" class="form-control">
+      <textarea [(ngModel)]="service.description" name="description" rows="8" cols="180" class="form-control">
       </textarea>
     </div>
 
     <div class="col-6 form-group ">
       <label for="price">Preço</label>
-      <input type="number" name="price" class="form-control">
+      <input [(ngModel)]="service.price" type="number" name="price" class="form-control">
     </div>
 
     <div class="col-6 form-group">
       <label for="term">Prazo</label>
-      <input type="date" name="term" class="form-control">
+      <input [(ngModel)]="service.term" type="date" name="term" class="form-control">
     </div>
 
   </form>
 
-  <button type="button" name="button">Adicionar</button>
+  <button (click)="addService()" type="button" name="button">{{service.id?'Salvar':'Adicionar'}}</button>
 
 </div>
