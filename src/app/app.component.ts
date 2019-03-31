@@ -9,7 +9,8 @@ import { LoginService } from './login/login.service';
 export class AppComponent implements OnInit{
   title = 'service-control-front';
 
-  isLoggedFlag:boolean = false;;
+  isLoggedFlag:boolean = false;
+  asideShow:boolean;
 
   constructor(private loginService:LoginService){
   }

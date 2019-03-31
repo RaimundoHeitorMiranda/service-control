@@ -23,7 +23,7 @@ export class ViewServiceComponent implements OnInit {
     })
   }
 
-  update(service:Service){
+  update(){
     this.viewService.updateService(this.service).subscribe(result=>{
       this.service = result;
     })

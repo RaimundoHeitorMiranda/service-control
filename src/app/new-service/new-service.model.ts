@@ -4,6 +4,7 @@ export class Service{
   client:string;
   description:Date;
   creation_date:string;
+  term:Date;
   end_date:Date;
   price:number;
   status:StatusService;

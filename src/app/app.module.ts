@@ -25,6 +25,8 @@ import { NewUserService } from './new-user/new-user.service';
 import { LoginService } from './login/login.service';
 import { NewService } from './new-service/new-service.service';
 import { ViewService } from './view-service/view-service.service';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 
@@ -46,7 +48,8 @@ import { ViewService } from './view-service/view-service.service';
     BrowserAnimationsModule,
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     NewUserService,
