@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1554066868646,
+  "timestamp": 1554069240040,
   "index": "https://raimundoheitormiranda.github.io/service-control/index.html",
   "assetGroups": [
     {
@@ -11,7 +11,7 @@
         "https://raimundoheitormiranda.github.io/service-control/es2015-polyfills.c5dd28b362270c767b34.js",
         "https://raimundoheitormiranda.github.io/service-control/favicon.ico",
         "https://raimundoheitormiranda.github.io/service-control/index.html",
-        "https://raimundoheitormiranda.github.io/service-control/main.43ffbf66c519375be313.js",
+        "https://raimundoheitormiranda.github.io/service-control/main.5faf2e822038f5e3605f.js",
         "https://raimundoheitormiranda.github.io/service-control/polyfills.8bbb231b43165d65d357.js",
         "https://raimundoheitormiranda.github.io/service-control/runtime.26209474bfa8dc87a77c.js",
         "https://raimundoheitormiranda.github.io/service-control/styles.d7e7fc526e486a1927cd.css"
@@ -47,8 +47,8 @@
     "https://raimundoheitormiranda.github.io/service-control/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "https://raimundoheitormiranda.github.io/service-control/es2015-polyfills.c5dd28b362270c767b34.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
     "https://raimundoheitormiranda.github.io/service-control/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://raimundoheitormiranda.github.io/service-control/index.html": "5e5e813e9cbce9347728fcf3722d055530ebef50",
-    "https://raimundoheitormiranda.github.io/service-control/main.43ffbf66c519375be313.js": "93728fb653dabaed28c438cbdbdf4ca6067d0dad",
+    "https://raimundoheitormiranda.github.io/service-control/index.html": "114d9b7363a94e0df00ac87a75b3928e971252c2",
+    "https://raimundoheitormiranda.github.io/service-control/main.5faf2e822038f5e3605f.js": "65d51b781e77a5cef1f97e2f5aa8769243b16a31",
     "https://raimundoheitormiranda.github.io/service-control/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "https://raimundoheitormiranda.github.io/service-control/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "https://raimundoheitormiranda.github.io/service-control/styles.d7e7fc526e486a1927cd.css": "35ba0e3956ab4f2031eb5629071712865329ec1e"
