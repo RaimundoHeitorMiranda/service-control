@@ -1,6 +1,6 @@
 <div class="home-container">
 
-  <div class="graphs">
+  <div *ngIf="isEmptyServiceList()" class="graphs">
 
     <div class="graphs-services">
       <h6>Services</h6>
@@ -27,7 +27,7 @@
   <!-- Divider between graphs and services list -->
   <hr>
 
-  <div class="services">
+  <div *ngIf="isEmptyServiceList()" class="services">
     <h5>Services List</h5>
     <table class="table">
       <tr>
@@ -41,6 +41,10 @@
         <td class="table-term">{{service.term}}</td>
       </tr>
     </table>
+  </div>
+
+  <div *ngIf="!isEmptyServiceList()" class="">
+    <h2>Por favor Adicione um novo Serviço na aba de Menu</h2>
   </div>
 
 

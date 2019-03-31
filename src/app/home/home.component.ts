@@ -25,7 +25,8 @@ export class HomeComponent implements OnInit {
   public pieChartLegend = false;
 
   // List of services
-  services:Service[]= [];
+  services:Service[];
+
 
   constructor(private viewService:ViewService,
               private router:Router) { }
@@ -51,10 +52,14 @@ export class HomeComponent implements OnInit {
     this.viewService.getFinancial().subscribe(result =>{
       console.log(result)
       this.pieFinancialChartData = [
-        result.moneyReceived,
-        result.moneyToReceive
+        result.moneyReceived | 0,
+        result.moneyToReceive | 0
       ]
     })
+  }
+
+  isEmptyServiceList(){
+    return this.services.length > 0;
   }
 
   showService(serviceId:number){
