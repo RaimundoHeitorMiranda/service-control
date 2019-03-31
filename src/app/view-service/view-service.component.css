@@ -12,15 +12,19 @@
 }
 
 .delete-button{
-  position: absolute;
+  position: relative;
   right: 1;
   bottom: 0;
   margin: 0px 5% 5% 0;
 }
 
 .edit-button{
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   margin: 0px 5% 5% 0;
+}
+
+p{
+  /* border: solid 1px gray; */
 }

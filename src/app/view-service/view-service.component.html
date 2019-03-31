@@ -3,45 +3,58 @@
 
     <div class="col-12 form-group">
       <label for="name">Nome:</label>
-      <h5>Teste Nome</h5>
+      <h5>{{service.name}}</h5>
     </div>
 
     <div class="col-12 form-group">
       <label for="client">Cliente:</label>
-      <h5>Teste Cliente</h5>
+      <h5>{{service.client}}</h5>
     </div>
 
     <div class="col-12 form-group">
       <label for="inputState">Status:</label>
-      <select id="inputState" class="form-control" name="status" [(ngModel)]="status">
-        <option selected>Esperando</option>
-        <option>Em Andamento</option>
-        <option>Pausado</option>
-        <option>Parado</option>
-        <option>Cançelado</option>
-        <option>Aguardando Pagamento</option>
+      <select id="inputState" class="form-control" name="status" [(ngModel)]="service.status">
+        <option selected value="WAITING">Aguardo</option>
+        <option value="IN_PROGRESS">Em Andamento</option>
+        <option value="PAUSED">Pausado</option>
+        <option value="STOPPED">Parado</option>
+        <option value="CANCELED">Cançelado</option>
+        <option value="WAITING_PAYMENT">Aguardando Pagamento</option>
+        <option value="FINALIZED">Finalizado</option>
       </select>
     </div>
 
     <div class="col-12 form-group textarea">
       <label for="description">Descrição:</label>
-      <p> Teste Descrição
-      </p>
+      <p>{{service.description}}</p>
+    </div>
+
+    <div class="col-6 form-group ">
+      <label for="price">Data de Criação:</label>
+      <h5>{{service.creation_date | date :'dd/MM/yyyy hh:mm'}}</h5>
+    </div>
+
+    <div class="col-6 form-group">
+      <label for="term">Data de Finalização:</label>
+      <h5>{{service.end_date | date :'dd/MM/yyyy'}}</h5>
     </div>
 
     <div class="col-6 form-group ">
       <label for="price">Preço:</label>
-      <h5>899,00</h5>
+      <h5>{{service.price}}</h5>
     </div>
 
     <div class="col-6 form-group">
       <label for="term">Prazo:</label>
-      <h5>22/09/2019</h5>
+      <h5>{{service.term | date :'dd/MM/yyyy' }}</h5>
     </div>
 
   </form>
 
-  <button type="button" name="delteButton" class="delete-button">Deletar</button>
-  <button type="button" name="editButton" class="edit-button">Atualizar</button>
+  <div class="">
+    <button (click)="delete()" type="button" name="delteButton" class="delete-button">Deletar</button>
+    <button (click)="edit()"type="button" name="editButton" class="edit-button">Editar</button>
+    <button (click)="update()" type="button" name="delteButton" class="delete-button">Atualizar</button>
+  </div>
 
 </div>
