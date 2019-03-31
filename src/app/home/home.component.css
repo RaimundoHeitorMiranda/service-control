@@ -21,6 +21,25 @@
   height: 100%;
 }
 
+.table{
+  text-align: left;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-name{
+  flex: 2;
+}
+
+.table-client{
+  flex: 2;
+}
+
+.table-term{
+  flex: 1;
+}
+
 canvas{
   width: 100% !important;
   height: 100% !important;

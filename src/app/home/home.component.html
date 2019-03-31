@@ -30,50 +30,16 @@
   <div class="services">
     <h5>Services List</h5>
     <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Nome</th>
-          <th scope="col">Cliente</th>
-          <th scope="col">Prazo</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Motor quantico</td>
-          <td>Antonio</td>
-          <td>25/05/2019</td>
-        </tr>
-        <tr>
-          <td>Motor quantico</td>
-          <td>Antonio</td>
-          <td>25/05/2019</td>
-        </tr>
-        <tr>
-          <td>Motor quantico</td>
-          <td>Antonio</td>
-          <td>25/05/2019</td>
-        </tr>
-        <tr>
-          <td>Motor quantico</td>
-          <td>Antonio</td>
-          <td>25/05/2019</td>
-        </tr>
-        <tr>
-          <td>Motor quantico</td>
-          <td>Antonio</td>
-          <td>25/05/2019</td>
-        </tr>
-        <tr>
-          <td>Motor quantico</td>
-          <td>Antonio</td>
-          <td>25/05/2019</td>
-        </tr>
-        <tr>
-          <td>Motor quantico</td>
-          <td>Antonio</td>
-          <td>25/05/2019</td>
-        </tr>
-      </tbody>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Cliente</th>
+        <th scope="col">Prazo</th>
+      </tr>
+      <tr *ngFor="let service of services" (click)="showService(service.id)">
+        <td class="table-name">{{service.name}}</td>
+        <td class="table-client">{{service.client}}</td>
+        <td class="table-term">{{service.term}}</td>
+      </tr>
     </table>
   </div>
 

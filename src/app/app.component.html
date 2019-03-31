@@ -1,7 +1,7 @@
 <!-- <app-login></app-login> -->
 <div class="app-container">
 
-  <div class="app-header">
+  <div *ngIf="isLoggedFlag" class="app-header">
     <i class="material-icons app-header-ico" (click)="asideShow = !asideShow">
       menu
     </i>
@@ -13,13 +13,14 @@
       <li class="list-group-item" [routerLink]="['/newService']" >Novo Serviço</li>
       <li class="list-group-item" [routerLink]="['/listService']" >Serviços</li>
       <li class="list-group-item" [routerLink]="['/financial']" >Financeiro</li>
-      <li class="list-group-item">Sair</li>
+      <li class="list-group-item" (click)="logout()">Sair</li>
     </ul>
   </aside>
 
 
   <div class="app-body">
-    <router-outlet></router-outlet>
+    <!-- <app-login *ngIf="!isLoggedFlag" ></app-login> -->
+    <router-outlet *ngIf="true"></router-outlet>
   </div>
 
 </div>

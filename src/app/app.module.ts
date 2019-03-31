@@ -22,6 +22,9 @@ import { NewUserComponent } from './new-user/new-user.component';
 
 // Service
 import { NewUserService } from './new-user/new-user.service';
+import { LoginService } from './login/login.service';
+import { NewService } from './new-service/new-service.service';
+import { ViewService } from './view-service/view-service.service';
 
 
 
@@ -47,6 +50,9 @@ import { NewUserService } from './new-user/new-user.service';
   ],
   providers: [
     NewUserService,
+    LoginService,
+    NewService,
+    ViewService
   ],
   bootstrap: [AppComponent]
 })
