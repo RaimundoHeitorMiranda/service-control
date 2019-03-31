@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { UserLogin } from './login.model'
+import { LoginService } from './login.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  user:UserLogin = new UserLogin();
+
+  constructor(private loginService:LoginService) { }
 
   ngOnInit() {
+  }
+
+  login(){
+    this.loginService.login(this.user).subscribe(result =>{
+      console.log(result);
+    })
   }
 
 }
