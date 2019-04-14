@@ -10,17 +10,18 @@ import { Router } from '@angular/router';
 @Injectable()
 export class LoginService{
 
-  userLogged:User;
-  isLoggedFlagEvent:EventEmitter<boolean> = new EventEmitter<boolean>();
+  userLogged: User;
+  isLoggedFlagEvent: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  constructor(private http:HttpClient,
-              private router:Router){
+  constructor(private http: HttpClient,
+              private router: Router){
   }
 
-  login(user:UserLogin):Observable<User>{
+  login(user: UserLogin): Observable<User>{
     return this.http.post<User>(`${API}/login`,user).pipe(
       map(result =>{
         this.userLogged = result;
+        console.log(result);
         this.isLoggedFlagEvent.emit(true);
         this.router.navigate(['/']);
         return result;

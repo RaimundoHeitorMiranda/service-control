@@ -1,0 +1,67 @@
+<div class="description-container">
+    <form class="form-row">
+  
+  
+      <div class="col-12 form-group text-center">
+        <h5>{{service.name}}</h5>
+      </div>
+  
+      <div class="col-12 form-group">
+        <label for="client">Cliente:</label>
+        <h5>{{service.client}}</h5>
+      </div>
+    
+      <div class="col-12 form-group textarea">
+        <label for="description">Descrição:</label>
+        <p>{{service.description}}</p>
+      </div>
+  
+      <div class="col-12 form-group">
+          <label for="inputState">Status:</label>
+          <select id="inputState" class="form-control" name="status" [(ngModel)]="service.status">
+            <option selected value="WAITING">Aguardo</option>
+            <option value="IN_PROGRESS">Em Andamento</option>
+            <option value="PAUSED">Pausado</option>
+            <option value="STOPPED">Parado</option>
+            <option value="CANCELED">Cançelado</option>
+            <option value="WAITING_PAYMENT">Aguardando Pagamento</option>
+            <option value="FINALIZED">Finalizado</option>
+          </select>
+        </div>
+
+      <div class="col-6 form-group ">
+        <label for="price">Data de Criação:</label>
+        <h5>{{service.creation_date | date :'dd/MM/yyyy hh:mm'}}</h5>
+      </div>
+  
+      <div class="col-6 form-group">
+        <label for="term">Data de Finalização:</label>
+        <h5>{{service.end_date | date :'dd/MM/yyyy'}}</h5>
+      </div>
+  
+      <div class="col-6 form-group ">
+        <label for="price">Preço:</label>
+        <h5>{{service.price}}</h5>
+      </div>
+  
+      <div class="col-6 form-group">
+        <label for="term">Prazo:</label>
+        <h5>{{service.term | date :'dd/MM/yyyy' }}</h5>
+      </div>
+  
+    </form>
+  
+    <div class="">
+        <i class="material-icons delete-button" (click)="deleteFlag =!deleteFlag">delete</i>
+        <i class="material-icons edit-button" (click)="edit()">edit</i>
+    </div>
+
+    <div class="delete-confirm" *ngIf="deleteFlag">
+        <p>Deseja mesmo deletar o serviço?</p>
+        <button (click)="delete()">Sim</button>
+        <button (click)="deleteFlag =!deleteFlag">Não</button>
+      </div>
+  
+  </div>
+  
+  

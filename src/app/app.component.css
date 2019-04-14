@@ -8,7 +8,7 @@
   text-align: center;
   display: flex;
   flex-direction:row;
-  border-bottom: 1px  solid grey;
+  border-bottom: 2px  solid grey;
 }
 
 .app-header-ico{
@@ -30,7 +30,7 @@
 }
 
 .app-body{
-  margin: 2% 5% 0% 5%;
+  /* margin: 2% 5% 0% 5%; */
   height: 92%;
   z-index: 1;
 }

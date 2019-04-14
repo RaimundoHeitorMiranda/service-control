@@ -1,60 +1,20 @@
-<div class="view-service-container">
-  <form class="form-row">
+<div class="view-service-container container">
+  <div class="row header-options">
 
-    <div class="col-12 form-group">
-      <label for="name">Nome:</label>
-      <h5>{{service.name}}</h5>
-    </div>
+      <div class="col-6 text-center left"
+           (click)="descriptionFlag = !descriptionFlag">
+        Descrição
+      </div>
+      <div class="col-6 text-center"
+           (click)="descriptionFlag = !descriptionFlag">
+        Eventos
+      </div>
 
-    <div class="col-12 form-group">
-      <label for="client">Cliente:</label>
-      <h5>{{service.client}}</h5>
-    </div>
+  </div>
 
-    <div class="col-12 form-group">
-      <label for="inputState">Status:</label>
-      <select id="inputState" class="form-control" name="status" [(ngModel)]="service.status">
-        <option selected value="WAITING">Aguardo</option>
-        <option value="IN_PROGRESS">Em Andamento</option>
-        <option value="PAUSED">Pausado</option>
-        <option value="STOPPED">Parado</option>
-        <option value="CANCELED">Cançelado</option>
-        <option value="WAITING_PAYMENT">Aguardando Pagamento</option>
-        <option value="FINALIZED">Finalizado</option>
-      </select>
-    </div>
-
-    <div class="col-12 form-group textarea">
-      <label for="description">Descrição:</label>
-      <p>{{service.description}}</p>
-    </div>
-
-    <div class="col-6 form-group ">
-      <label for="price">Data de Criação:</label>
-      <h5>{{service.creation_date | date :'dd/MM/yyyy hh:mm'}}</h5>
-    </div>
-
-    <div class="col-6 form-group">
-      <label for="term">Data de Finalização:</label>
-      <h5>{{service.end_date | date :'dd/MM/yyyy'}}</h5>
-    </div>
-
-    <div class="col-6 form-group ">
-      <label for="price">Preço:</label>
-      <h5>{{service.price}}</h5>
-    </div>
-
-    <div class="col-6 form-group">
-      <label for="term">Prazo:</label>
-      <h5>{{service.term | date :'dd/MM/yyyy' }}</h5>
-    </div>
-
-  </form>
-
-  <div class="">
-    <button (click)="delete()" type="button" name="delteButton" class="delete-button">Deletar</button>
-    <button (click)="edit()"type="button" name="editButton" class="edit-button">Editar</button>
-    <button (click)="update()" type="button" name="delteButton" class="delete-button">Atualizar</button>
+  <div class="body">
+    <app-service-description *ngIf="descriptionFlag"></app-service-description>
+    <app-service-events *ngIf="!descriptionFlag"></app-service-events>
   </div>
 
 </div>

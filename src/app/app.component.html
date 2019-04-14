@@ -19,8 +19,8 @@
 
 
   <div class="app-body">
-    <!-- <app-login *ngIf="!isLoggedFlag" ></app-login> -->
-    <router-outlet *ngIf="true"></router-outlet>
+    <app-login *ngIf="!isLoggedFlag" ></app-login>
+    <router-outlet *ngIf="isLoggedFlag"></router-outlet>
   </div>
 
 </div>

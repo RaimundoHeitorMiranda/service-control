@@ -19,6 +19,8 @@ import { ChartsModule } from 'ng2-charts';
 import { ListServiceComponent } from './list-service/list-service.component';
 import { FinancialComponent } from './financial/financial.component';
 import { NewUserComponent } from './new-user/new-user.component';
+import { ServiceEventsComponent } from './view-service/service-events/service-events.component';
+import { ServiceDescriptionComponent } from './view-service/service-description/service-description.component';
 
 // Service
 import { NewUserService } from './new-user/new-user.service';
@@ -39,7 +41,9 @@ import { environment } from '../environments/environment';
     ViewServiceComponent,
     ListServiceComponent,
     FinancialComponent,
-    NewUserComponent
+    NewUserComponent,
+    ServiceDescriptionComponent,
+    ServiceEventsComponent
   ],
   imports: [
     BrowserModule,
